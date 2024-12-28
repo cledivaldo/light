@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./CadastroInativacaoColaborador.module.css"; // Importando o CSS para ser aplicado ao formulário
+import styles from "./CadastroICR.module.css"; // Importando o CSS para ser aplicado ao formulário
 import UserProfile from "../../../layout/UserProfile";
 import { useNavigate } from "react-router-dom";
 
