@@ -69,7 +69,7 @@ function CadastroInativacaoColaborador() {
     <div className={styles.container}>
       <h1>Cadastro, Alteração ou Inativação de Dados de Colaborador</h1>
       <form onSubmit={handleSubmit}>
-        <div className={styles.container_formgroup}>
+        <div>
           <label htmlFor="email">E-mail do Colaborador/Login:</label>
           <input
             type="email"
@@ -82,7 +82,7 @@ function CadastroInativacaoColaborador() {
             disabled
           />
         </div>
-        <div className={styles.container_formgroup}>
+        <div>
           <label htmlFor="nome">Nome do Colaborador :</label>
           <input
             type="text"
@@ -95,7 +95,7 @@ function CadastroInativacaoColaborador() {
             disabled
           />
         </div>
-        <div className={styles.container_formgroup}>
+        <div>
           <label htmlFor="matricula">Matrícula do Colaborador:</label>
           <input
             type="text"
@@ -108,7 +108,7 @@ function CadastroInativacaoColaborador() {
             disabled
           />
         </div>
-        <div className={styles.container_formgroup}>
+        <div>
           <label htmlFor="area">Área do Colaborador:</label>
           <input
             type="text"
@@ -121,7 +121,7 @@ function CadastroInativacaoColaborador() {
             disabled
           />
         </div>
-        <div className={styles.container_formgroup}>
+        <div>
           <label htmlFor="solicitacao">Seleção da Solicitação:</label>
           <select
             id="solicitacao"
@@ -136,7 +136,7 @@ function CadastroInativacaoColaborador() {
             <option value="3">Inativação de Colaborador</option>
           </select>
         </div>
-        <div className={styles.container_formgroup}>
+        <div>
           <label htmlFor="proprioCadastro">
             Seleção Facilitada de Cadastro:
           </label>
@@ -154,7 +154,7 @@ function CadastroInativacaoColaborador() {
         </div>
         {formData.proprioCadastro === "2" && (
           <>
-            <div className={styles.container_formgroup}>
+            <div>
               <label htmlFor="emailCadastro">
                 E-mail do Colaborador da Light:
               </label>
@@ -168,7 +168,7 @@ function CadastroInativacaoColaborador() {
               />
             </div>
 
-            <div className={styles.container_formgroup}>
+            <div>
               <label htmlFor="nomeCadastro">
                 Nome do Colaborador da Light:
               </label>
@@ -182,7 +182,7 @@ function CadastroInativacaoColaborador() {
               />
             </div>
 
-            <div className={styles.container_formgroup}>
+            <div>
               <label htmlFor="matriculaCadastro">
                 Matrícula do Colaborador da Light:
               </label>
@@ -196,7 +196,7 @@ function CadastroInativacaoColaborador() {
               />
             </div>
 
-            <div className={styles.container_formgroup}>
+            <div>
               <label htmlFor="areaCadastro">
                 Área do Colaborador da Light:
               </label>
@@ -211,7 +211,7 @@ function CadastroInativacaoColaborador() {
             </div>
           </>
         )}
-        <div className={styles.container_formgroup}>
+        <div>
           <label htmlFor="justificativa">Justificativa da Solicitação:</label>
           <textarea
             id="justificativa"
@@ -224,18 +224,12 @@ function CadastroInativacaoColaborador() {
           />
           <p>{charCount} caracteres(máx. 500)</p>
         </div>
-        <div className={styles.container_buttons}>
-          <button
-            className={styles.container_buttons_cancel}
-            type="button"
-            onClick={handleBack}
-          >
+        <div>
+          <button type="button" onClick={handleBack}>
             {" "}
             Voltar
           </button>
-          <button className={styles.container_buttons_submit} type="submit">
-            Prosseguir / Enviar
-          </button>
+          <button type="submit">Prosseguir / Enviar</button>
         </div>
       </form>
 

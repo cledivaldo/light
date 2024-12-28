@@ -46,7 +46,7 @@
   gap: 20px;
 }
 
-.container_formgroup {
+.container div {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -65,7 +65,7 @@
   text-align: left;
 }
 
-.container_formgroup label:hover {
+.container label:hover {
   transform: translateY(-5px); /* Aumenta a elevação */
   text-shadow: 3px 3px 8px rgba(238, 215, 6, 0.5),
     0px 0px 20px rgba(255, 255, 255, 0.8); /* Realça a sombra */
@@ -97,26 +97,17 @@
   width: 100%; /* Para usar toda a largura disponível */
 }
 
-.container_buttons {
+.container button {
   display: grid;
   row-gap: 16px; /* Espaçamento vertical entre os botões */
   margin-top: 16px; /* Espaçamento entre os botões e o formulário */
-  height: 50%;
-  width: 100%;
+  height: 30%;
+  width: 50%;
   align-self: center;
   font-size: 0.8vw;
+  background-color: #333;
+  text-align: center;
 }
-
-.container_buttons_cancel {
-  background-color: #f0ed36;
-  color: #333;
-}
-
-/* button {
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-} */
 
 .container button:hover {
   background-color: #f10e0eea;
@@ -125,11 +116,6 @@
 .container button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
-}
-
-.container p {
-  color: #888;
-  font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
