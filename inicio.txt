@@ -1,0 +1,52 @@
+npm : O arquivo C:\nodejs\npm.ps1 não pode ser carregado. O arquivo C:\nodejs\npm.ps1 não está assinado digitalmente. Não é possível executar este script no sistema atual. Para obter mais informações sobre como executar 
+scripts e definir a política de execução, consulte about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170.
+No linha:1 caractere:1
++ npm create vite@5.5.2 .
++ ~~~
+    + CategoryInfo          : ErrodeSegurança: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS Z:\projects\React> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+PS Z:\projects\React> npm create vite@5.5.2 .
+Need to install the following packages:
+create-vite@5.5.2
+Ok to proceed? (y) y
+
+
+> npx
+> cva .
+
+√ Package name: ... react
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+
+√ Select a framework: » React
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+
+Scaffolding project in Z:\projects\React...
+
+Done. Now run:
+
+  npm install
+  npm run dev
+
+npm notice
+npm notice New major version of npm available! 10.9.0 -> 11.0.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.0.0
+npm notice To update run: npm install -g npm@11.0.0
+npm notice
+PS Z:\projects\React> npm install
+
+
+PS Z:\projects\React_first> Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+PS Z:\projects\React_first> npm install uuid
+
+added 1 package, and audited 364 packages in 2s
+
+133 packages are looking for funding
+  run `npm fund` for details
+
+
+PS Z:\projects\_projects_react\meu-projeto> npm install react-router-dom
+
+PS Z:\projects\_projects_react\meu-projeto> npm install react-icons

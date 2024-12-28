@@ -1,0 +1,79 @@
+/* .navbar */
+.navbar {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end; /* Contente alinhado à direita */
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  height: 60px; /* Ajuste a altura se necessário */
+}
+
+.navbar img {
+  width: 32px; /* Tamanho da logo */
+  cursor: pointer;
+  position: absolute;
+  left: 2rem; /* Alinha à esquerda */
+}
+
+.list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-end; /* Links a direita */
+  flex: 1;
+}
+
+.item {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.item a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.item a:hover {
+  color: #ffbb33; /* Cor ao passar o mouse */
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espaço entre os elementos do perfil */
+  color: #fff;
+  /* margin-left: auto; Alinha o perfil à direita */
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .list {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .profileContainer {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

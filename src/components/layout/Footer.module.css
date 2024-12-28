@@ -1,0 +1,62 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1px 2px;
+  margin: 0px 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.siga_nos {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffbb33;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Espaço uniforme entre os ícones */
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.social_list li {
+  font-size: 2rem; /* Tamanho dos ícones */
+  color: #ccc; /* Cor inicial dos ícones */
+  transition: color 0.3s ease;
+}
+
+.social_list li:hover {
+  color: #ffbb33; /* Cor ao passar o mouse */
+}
+
+.copy_right {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  color: #ddd;
+}
+
+.copy_right span {
+  font-weight: bold;
+  color: #ffbb33;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .siga_nos {
+    font-size: 1.2rem;
+  }
+
+  .social_list li {
+    font-size: 1.8rem;
+  }
+
+  .copy_right {
+    font-size: 0.9rem;
+  }
+}

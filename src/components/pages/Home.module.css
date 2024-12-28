@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.home {
+  background-color: white;
+  top: 0; /* Alinha na parte inferior */
+  left: 0; /* Garante que fica à esquerda da viewport */
+  width: 100%; /* Faz o footer ocupar toda a largura da viewport */
+  padding-bottom: 3em; /* Altura suficiente para o footer */
+}
+
+.home_container {
+  display: grid;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 20px;
+  min-height: 100%;
+  padding-bottom: 15rem; /* Para garantir que o conteúdo não cubra o footer */
+}
+
+.home_container h1 {
+  font-size: 2.5em;
+  margin-top: 0.1em;
+  max-width: 100%;
+  align-self: self-start;
+
+  /* Estilo visual */
+  color: #ffffff; /* Cor branca */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397),
+    /* Sombra sutil */ 0px 0px 10px rgb(255, 255, 255); /* Efeito flutuante */
+
+  /* Estilo adicional para flutuar */
+  transform: translateY(-10px); /* Elevação visual */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+
+  /* Alinhamento */
+  text-align: left;
+}
+
+/* Efeito hover */
+.home_container h1:hover {
+  transform: translateY(-15px); /* Aumenta a elevação */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5),
+    0px 0px 20px rgba(255, 255, 255, 0.8); /* Realça a sombra */
+}
+
+.home_container h1 span {
+  color: #ffbb33;
+  padding: 0 0.1em;
+}
+
+.home_container p {
+  margin-top: 1.5em;
+  width: 100%;
+  text-align: justify;
+  max-width: 80vw;
+}
+
+.home_container p span {
+  color: #ffbb33;
+  padding: 0 0.1em;
+}
+
+.home_container img {
+  max-width: 80vw; /* Garante que a imagem não ultrapasse o container */
+  height: auto;
+  margin: 0 auto;
+}

@@ -1,0 +1,193 @@
+{
+	"users": [
+		{
+			"id": 0,
+			"name": "keval",
+			"email": "keval@empresa.com.br",
+			"password": "123",
+			"stockingUnit": "CSC São Paulo",
+			"department": "Departamento Contábil",
+			"group": 3
+		},
+		{
+			"id": 1,
+			"name": "Guilherme",
+			"email": "guilherme@gmail.com",
+			"password": "1234",
+			"stockingUnit": "CSC Rio Janeiro",
+			"department": "Departamento Pessoal",
+			"group": 2
+		},
+		{
+			"id": 3,
+			"name": "Keval Azevedo",
+			"email": "cledivaldo@gmail.com",
+			"password": "1234",
+			"unidade": "Filial 01",
+			"stockingUnit": "CSC São Paulo",
+			"department": "Departamento Jurídico",
+			"group": 1
+		}
+	],
+	"user_groups": [
+		{
+			"id": 1,
+			"name": "ADMINISTRADORES",
+			"description": "Grupo responsável pela gestão do sistema e suas funcionalidades.",
+			"createdAt": "2024-12-23 14:00:00",
+			"updatedAt": "2024-12-23 14:00:00",
+			"createdBy": 1,
+			"isActive": true,
+			"maxMembers": 100,
+			"privacyLevel": "restrito",
+			"groupAvatarUrl": "",
+			"parentGroupId": null
+		},
+		{
+			"id": 2,
+			"name": "DIRETORES",
+			"description": "Grupo que contém usuários responsáveis pela gestão estratégica do sistema.",
+			"createdAt": "2024-12-23 14:05:00",
+			"updatedAt": "2024-12-23 14:05:00",
+			"createdBy": 1,
+			"isActive": true,
+			"maxMembers": 50,
+			"privacyLevel": "restrito",
+			"groupAvatarUrl": "",
+			"parentGroupId": 1
+		},
+		{
+			"id": 3,
+			"name": "USUARIOS",
+			"description": "Grupo padrão para todos os usuários regulares do sistema.",
+			"createdAt": "2024-12-23 14:10:00",
+			"updatedAt": "2024-12-23 14:10:00",
+			"createdBy": 1,
+			"isActive": true,
+			"maxMembers": 1000,
+			"privacyLevel": "público",
+			"groupAvatarUrl": "",
+			"parentGroupId": null
+		}
+	],
+	"adm_users": [
+		{
+			"id": 1,
+			"name": "Rodrigo Rahman",
+			"email": "rodrigorahman@academiadoflutter.com.br",
+			"password": "123",
+			"profile": "ADMIN"
+		},
+		{
+			"id": 2,
+			"name": "Guilherme",
+			"email": "Guilherme@gmail.com",
+			"password": "1234",
+			"profile": "SUPORTE"
+		}
+	],
+	"products": [
+		{
+			"id": 0,
+			"title": "Academia do flutter"
+		},
+		{
+			"id": 1,
+			"title": "Jornada Dart"
+		},
+		{
+			"id": 2,
+			"title": "Jornada GetX"
+		}
+	],
+	"tasks": [
+		{
+			"id": 3,
+			"title": "Desenvolvimento Web",
+			"description": "Estudar HTML, CSS e JavaScript",
+			"isCompleted": false
+		},
+		{
+			"id": 4,
+			"title": "Curso de UX Design",
+			"description": "Completar curso online de UX Design",
+			"isCompleted": false
+		},
+		{
+			"id": 5,
+			"title": "Projeto de Dados",
+			"description": "Trabalhar em projeto de análise de dados com Python",
+			"isCompleted": false
+		},
+		{
+			"id": 7,
+			"title": "Desafio de Programação",
+			"description": "Resolver 5 problemas no HackerRank",
+			"isCompleted": false
+		},
+		{
+			"id": 9,
+			"title": "Revisão de Código",
+			"description": "Revisar código do projeto final do curso",
+			"isCompleted": false
+		},
+		{
+			"id": 10,
+			"title": "Workshop de IA",
+			"description": "Participar de workshop sobre Inteligência Artificial",
+			"isCompleted": false
+		},
+		{
+			"id": 11,
+			"title": 45646456456,
+			"description": 4564564,
+			"isCompleted": false
+		}
+	],
+	"usuariosLight": [
+		{
+			"id": 1,
+			"nome": "João Silva",
+			"email": "joao.silva@light.com",
+			"matricula": 852364,
+			"password": "Pass123456@",
+			"groupUser": 1
+		},
+		{
+			"id": 2,
+			"nome": "Maria Oliveira",
+			"email": "maria.oliveira@light.com",
+			"matricula": 673182,
+			"password": "Pass123456@",
+			"groupUser": 2
+		},
+		{
+			"id": 3,
+			"nome": "Carlos Mendes",
+			"email": "carlos.mendes@light.com",
+			"matricula": 479208,
+			"password": "Pass123456@",
+			"groupUser": 3
+		}
+	],
+	"gruposUsuarioLight": [
+		{
+			"id": 1,
+			"descricao": "COLABORADORES",
+			"nivelEscalonamento": 0,
+			"aprovador": 0
+		},
+		{
+			"id": 2,
+			"descricao": "GESTOR CSC-VIAGENS ESCAL-2",
+			"nivelEscalonamento": 2,
+			"nivelAprovador": 0
+		},
+		{
+			"id": 3,
+			"descricao": "GESTOR CSC-VIAGENS APROV-1",
+			"nivelEscalonamento": 0,
+			"aprovador": 1
+		}
+	]
+}

@@ -1,0 +1,32 @@
+.userProfile {
+  position: fixed;
+  top: 1px; /* Distância do topo */
+  right: 1px; /* Distância da direita */
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4; /* Cor de fundo */
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.userIcon {
+  font-size: 25px; /* Tamanho do ícone */
+  color: #4a90e2; /* Cor do ícone */
+  margin-right: 2px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: 10px; /* Tamanho do nome */
+  font-weight: bold;
+  color: #333;
+}
+
+.userId {
+  font-size: 10px; /* Tamanho da matrícula */
+  color: #666;
+}

@@ -1,0 +1,21 @@
+.btnFixo {
+  background-color: #222;
+  color: #fff;
+  padding: 0.1em 0.1em;
+  margin: 0.1em 0.1em;
+  text-decoration: none;
+  transition: 0.5s;
+  width: 80px; /* Largura do botão */
+  height: 30px; /* Altura do botão */
+  display: inline-block; /* Garante que largura e altura sejam aplicadas */
+  text-align: center; /* Centraliza horizontalmente */
+  line-height: 30px; /* Centraliza verticalmente */
+  position: fixed; /* Mantém o botão fixo na posição */
+  top: 20px; /* Define a distância do rodapé */
+  left: 20px; /* Define a distância da lateral direita */
+  border-radius: 5px; /* Deixa os cantos arredondados (opcional) */
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+.btnFixo:hover {
+  color: #b7dd0e;
+}

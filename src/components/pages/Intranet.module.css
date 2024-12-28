@@ -1,0 +1,79 @@
+.intranet {
+  background-size: cover;
+  background-position: center;
+  min-height: auto;
+  padding: 0px;
+  color: rgb(65, 60, 60);
+  text-align: left;
+}
+
+.intranet_container {
+  display: grid;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 0em;
+  min-height: 100%;
+  padding-bottom: 2rem; /* Para garantir que o conteúdo não cubra o footer */
+}
+
+.intranet_container h1 {
+  font-size: 2.5em;
+  margin-top: 0.1em;
+  max-width: 100%;
+  align-self: self-start;
+
+  /* Estilo visual */
+  color: #ffffff; /* Cor branca */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397),
+    /* Sombra sutil */ 0px 0px 10px rgb(255, 255, 255); /* Efeito flutuante */
+
+  /* Estilo adicional para flutuar */
+  transform: translateY(-10px); /* Elevação visual */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+
+  /* Alinhamento */
+  text-align: left;
+}
+
+/* Efeito hover */
+.intranet_container h1:hover {
+  transform: translateY(-15px); /* Aumenta a elevação */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5),
+    0px 0px 20px rgba(255, 255, 255, 0.8); /* Realça a sombra */
+}
+
+.intranet_container img {
+  max-width: 80vw; /* Garante que a imagem não ultrapasse o container */
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Lista */
+.intranet_container ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Itens da lista */
+.intranet_container li {
+  margin: 35px 10px;
+}
+
+/* Links */
+.intranet_container li a {
+  text-decoration: none;
+  color: #ffbb33;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #ffbb33;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos links */
+.intranet_container li a:hover {
+  background-color: #ffbb33;
+  color: #222;
+  transform: scale(1.1);
+}
